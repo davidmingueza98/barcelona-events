@@ -233,8 +233,8 @@ def main():
 
     #missatges de help
     helpKey = " Select all activities that have KEY as the name of the event,"
-    helpKey += " the name of the place where it takes place or"
-    helpKey += " district. To set more than one query key, you can either set a list,"
+    helpKey += " the name of the place or district."
+    helpKey += " To set more than one query key, you can either set a list,"
     helpKey += " which will show the activities that satisfy all the keys; or"
     helpKey += " a tuple that will show the activities that satisfy some of the keys."
     helpKey += " There is no distinction between uppercase and lowercase letters,"
