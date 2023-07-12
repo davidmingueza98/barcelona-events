@@ -232,25 +232,24 @@ def main():
     actualDate = str(now.day) + "/" + str(now.month) + "/" + str(now.year)
 
     #missatges de help
-    helpKey = "Selecciona totes les activitats que tenen KEY com a nom de"
-    helpKey += " l'esdeveniment, nom del lloc on es realitza o districte. "
-    helpKey += "Per posar més d'una key de consulta, o bé es fa posant una"
-    helpKey += " llista, que mostrara les activitats que satisfan totes"
-    helpKey += " les keys; o bé, una tupla que mostrara les que satisfan"
-    helpKey += " alguna de les keys. No hi ha distinció entre majúscules"
-    helpKey += " i minúscules, ni entre vocals accentuades o sense"
-    helpKey += " accentuar. Cal usar cometes simples per iniciar i"
-    helpKey += " finalitzar les consultes, dobles pels string"
+    helpKey = " Select all activities that have KEY as the name of the event,"
+    helpKey += " the name of the place where it takes place or"
+    helpKey += " district. To set more than one query key, you can either set a list,"
+    helpKey += " which will show the activities that satisfy all the keys; or"
+    helpKey += " a tuple that will show the activities that satisfy some of the keys."
+    helpKey += " There is no distinction between uppercase and lowercase letters,"
+    helpKey += " nor between accented and unaccented. Simple commas should be used"
+    helpKey += " to start and end the queries, double for the string"
 
-    helpData = "Data 'dd/mm/aaaa' que selecciona els esdeveniments pels que DATE"
-    helpData += " estigui entre la seva data d’inici i la de final, si no"
-    helpData += " es posa mostra els esdeveniments del dia actual"
+    helpData = "Date 'dd/mm/aaaa' that selects the events for which DATE"
+    helpData += " is between your start and end date, otherwise"
+    helpData += " it shows the event of the current day"
 
-    helpDistance = "Si la consulta es sobre esdeveniments diaris, indica"
-    helpDistance += " la distància màxima en metres a la que cerca"
-    helpDistance += " estacions de Bicing. En el cas que s'indica DATE"
-    helpDistance += " no mostra cap estació per tant aquest paràmetre"
-    helpDistance += " no es necessari. Valor per defecte: 500"
+    helpDistance = "If the query is about daily events, indicate"
+    helpDistance += " the maximum distance in meters that Bicing's stations"
+    helpDistance += " are showed. In the case that DATE is displayed"
+    helpDistance += " does not show any station so this parameter"
+    helpDistance += " is not required. Default value: 500m"
 
     #definició de parametres
     parser = argparse.ArgumentParser()
